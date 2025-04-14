@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мій тестовий сайт</title>
 
-  <!-- Google Tag Manager (Head) -->
-  <!-- Встав сюди свій GTM код для head -->
-  <!-- Наприклад: -->
-  <!-- <script>(function(w,d,s,l,i)...</script> -->
-  <!-- GTM Head End -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PTMRX6C3');
+  </script>
+  <!-- End Google Tag Manager -->
 
   <style>
     body {
@@ -32,15 +36,16 @@
 </head>
 <body>
 
-  <!-- Google Tag Manager (Body) -->
-  <!-- Встав сюди GTM noscript -->
-  <!-- Наприклад: -->
-  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX" ...></iframe></noscript> -->
-  <!-- GTM Body End -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTMRX6C3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <div class="card">
-    <h1>Вітаю на своєму тестовому сайті!</h1>
-    <p>Це простий шаблон для тестування аналітики через Google Tag Manager.</p>
+    <h1>Вітаю на тестовому сайті!</h1>
+    <p>Цей сайт має підключений Google Tag Manager для GA4.</p>
   </div>
 
 </body>
