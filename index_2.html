@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GA4 Тестовий сайт Rymish</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type="email"] {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      a {
+        font-size: 18px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- GTM container (обов'язково збережи це на початку body) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTMRX6C3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PTMRX6C3');
+    </script>
+
+    <h1>👋 Вітаю на тестовому сайті Rymish</h1>
+    <p>Цей сайт створено для практики з GA4 через Google Tag Manager.</p>
+
+    <hr />
+
+    <h2>🔘 Кнопка "Зв’язатися"</h2>
+    <button id="btn-contact">Зв’язатися</button>
+
+    <h2>📩 Форма підписки</h2>
+    <form id="subscribe-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <button type="submit">Підписатися</button>
+    </form>
+
+    <h2>🌐 Зовнішнє посилання</h2>
+    <a href="https://google.com" target="_blank">Перейти на Google</a>
+
+    <h2>⬇️ Скроль сторінки</h2>
+    <p>Прокрути сторінку донизу, щоб протестувати scroll event.</p>
+    <div style="height: 1500px;"></div>
+
+    <script>
+      // Поведінка для кнопки
+      document.getElementById("btn-contact").addEventListener("click", function () {
+        console.log("Кнопка 'Зв’язатися' натиснута");
+      });
+
+      // Поведінка для форми
+      document.getElementById("subscribe-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        console.log("Форма підписки відправлена");
+        alert("Дякуємо за підписку!");
+      });
+    </script>
+  </body>
+</html>
